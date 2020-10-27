@@ -10,12 +10,12 @@ public class ExNineteen {
     }
     public void average() {  //instance method
 
-        int i = 0;   //local variable
+        int i ;   //local variable
         int[] num = new int[]{10, 20, 30, 40, 50};
         int sum = 0;
-        for (i = 0; i < num.length; i++)  // used for loop to chech lenght of the []
+        for (i = 0; i < num.length; i++)  // used for loop to check length of the []
             sum = sum + num[i];
-        double average = sum / num.length;
+        int  average = sum / num.length;
         System.out.println("average value of array  elements = " + average);
     }
 }

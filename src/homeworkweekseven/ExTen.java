@@ -6,28 +6,32 @@ public class ExTen {
     /*WAP to input any two number and ask user to enter their symbol (+, -, /, *) find addition,
     Subtraction, multiplication and division according to their symbol (using if else)  */
     public static void main(String[] args) {  //main method
+        addSubDivMul();  //static method called in static area directly
+    }
+
+    public static void addSubDivMul() {
         Scanner s = new Scanner(System.in); //Scanner to take input from user
         System.out.print("Enter first number : ");
-        int num1=s.nextInt();
+        int num1 = s.nextInt();
         System.out.print("Enter second number : ");
-        int num2=s.nextInt();
+        int num2 = s.nextInt();
         System.out.print("Enter symbol (+, -, /, *) : ");
-        char sym=s.next().charAt(0);
-        if(sym=='+'){            //nested if else loop
-            System.out.println(num1 +"+"+num2+"="+ (num1+num2));
-        }else if (sym =='-'){
-            System.out.println(num1 +"-"+num2+"="+ (num1-num2));
-        }else if(sym =='*'){
-            System.out.println(num1 +"*"+num2+"="+ (num1*num2));
-        }else if(sym =='/' ){
-            System.out.println(num1 +"/"+num2+"="+ (num1/num2));
-        }else {
+        char sym = s.next().charAt(0);
+        if (sym == '+') {            //nested if else loop
+            System.out.println(num1 + "+" + num2 + "=" + (num1 + num2));
+        } else if (sym == '-') {
+            System.out.println(num1 + "-" + num2 + "=" + (num1 - num2));
+        } else if (sym == '*') {
+            System.out.println(num1 + "*" + num2 + "=" + (num1 * num2));
+        } else if (sym == '/') {
+            System.out.println(num1 + "/" + num2 + "=" + (num1 / num2));
+        } else {
             System.out.println("incorrect symbol ");
         }
 
 
-        }
     }
+}
 
 
 

@@ -3,10 +3,10 @@ package homeworkweekseven;
 public class EXSeventeen {
     // Write a Java program to sum values of an array.
     public static void main(String[] args) {  //main method
-        arraysum();  //static method called direct to static area
+        arraySum();  //static method called direct to static area
     }
 
-    public static void arraysum() {  //static method
+    public static void arraySum() {  //static method
         int[] i = new int[]{10, 20, 30, 40, 50, 60};
         int sum = 0;
         for (int j = 0; j < i.length; j++)

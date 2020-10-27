@@ -8,10 +8,13 @@ public class ExThirteen {
     contains 1 to 7 days”  */
 
     public static void main(String[] args) { //main method
+daysOfWeek(); //static method to static area
+    }
+        public static void daysOfWeek(){  //static method
         Scanner s = new Scanner(System.in);  //Scanner for users input
         System.out.println("Enter number from  1 to 7 :  ");
         int day = s.nextInt();
-        switch (day) {  //switch statments
+        switch (day) {  //switch statements
             case 1:
                 System.out.println("Monday");
                 break;

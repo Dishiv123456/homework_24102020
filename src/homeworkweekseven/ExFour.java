@@ -22,12 +22,12 @@ You should check if the year is a leap year using the method isLeapYear describe
 public class ExFour {
     public static void main(String[] args) {   //main method
 
-        System.out.println(isLeapYear((2017)));
-        System.out.println(getDaysInMonth(01, 2020));
+        System.out.println(isLeapYear((-1600)));
+        System.out.println(getDaysInMonth(1, 2020));
     }
 
     public static boolean isLeapYear(int year) {  //used return tye and  parameterized mathod
-        if (year >= 1 || year <= 9999) {
+        if (year >= 1 && year <= 9999) {
             return ((year % 400 == 0) || (year % 100 != 0) && (year % 4 == 0));  // formula to check leap year
 
         } else {
