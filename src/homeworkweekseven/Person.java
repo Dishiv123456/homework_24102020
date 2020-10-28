@@ -39,18 +39,18 @@ public class Person {
     public void setAge(int age) {
         if (age <= 0 || age >= 100) {
             this.age = 0;
-        }
+        }else {this.age=age;}
 
     }
 
     /*Method named isTeen without any parameters, it needs to return true if the value of the age field is  greater than
      12 and less than 20, otherwise, return false.*/
     public boolean isTeen() {
-        if (age > 12 || age < 20) {
+        if (age > 12 && age < 20) {
             return true;
-        }
+        }else {
         return false;
-    }
+    }}
 
     /*Method named getFullName without any parameters, it needs to return the full name of the person.  *In case both firstName
  and lastName fields are empty, Strings return an empty String.  *In case firstName is an empty String, return firstName.

@@ -10,7 +10,7 @@ public class ExFive {
  Gross salary = basic salary + HRA + TA + DA –PF
 Print in following format  */
     public static void main(String[] args) {  //main method
-        salary();  //static method callled to static area directly
+        salary();  //static method called to static area directly
     }
 
     public static void salary() {  //static method
@@ -55,7 +55,7 @@ Print in following format  */
         System.out.println("|HRA 10%       :" + HRA + "|");
         System.out.println("| TA 8%        :" + TA + "|");
         System.out.println("| DA 9%        :" + DA + "|");
-        System.out.println("| PF -20 &     :" + PF + "|");
+        System.out.println("| PF -20      :" + PF + "|");
         System.out.println("|____________________________________|");
         System.out.println("|Gross salary   :" + grossSalary + "|");
         System.out.println("|====================================|");

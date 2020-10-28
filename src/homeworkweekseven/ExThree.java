@@ -11,7 +11,6 @@ public class ExThree {
     public static void main(String[] args) { //main method
         studentDetails();  //called static method to static area
     }
-
     public static void studentDetails() { //static method
         String name;
         int roll_no, maths, science, english;
